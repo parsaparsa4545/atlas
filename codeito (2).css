@@ -1,0 +1,226 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+nav{
+    background-color: rgb(255, 118, 65);
+    direction: rtl;
+    height: auto;
+
+    border-bottom: 5px solid #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.nv{
+    font-family: "Rubik", sans-serif;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(14, 14, 14);
+    transition: 0.5s;
+    display: inline-flex;
+    flex-direction: column;
+}
+.sercha{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    border-radius: 20px;
+    align-items: center;
+}
+.serch{
+    background-color: #ffba9f;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.serch:active .border{
+    display: none;
+}
+.one{
+    margin-top: 2px;
+    background-color: rgb(0, 38, 72);
+    border-radius: 20px;
+    width: 0px;
+    height: 5px;
+    transition: 0.5s;
+}
+.nv:hover .one{
+    width: 100%;
+}
+.border{
+    text-align: center;
+    border-bottom: #000 solid 5px;
+    background-image: url(sh.png);
+    background-size: 90%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    z-index: -1;
+    margin-top: 70px;
+}
+.sh{
+    transform: translate(800px,425px);
+    width: 300px;
+    height: 80px;
+    font-size: 50px;
+    background-image: url(bu.png);
+    background-size: 100%;
+    border-radius: 50px;
+    color: aliceblue;
+    text-shadow: 0px 0px 10px#000 ;
+    font-family: "Rubik", sans-serif;
+    transition: 0.5s;
+    
+}
+.sh:hover{
+    box-shadow: 0px 0px 15px rgb(83, 83, 83);
+}
+
+.chi{
+    z-index: -1;
+    margin-top: 50px;
+    width: 400px;
+    background-color: #b6b3bc;
+    margin-left: 70px;
+    height: 500px;
+    transition: 1s;
+    border-radius: 20px;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgb(0, 0, 0);
+    background: linear-gradient(rgb(229, 235, 253),rgb(255, 121, 25),rgb(220, 116, 103),rgb(229, 235, 253)
+    );
+    animation: chi 1s ease-in-out infinite alternate;
+}
+@keyframes chi {
+    0%   { background-position:   0% 50%; }
+    100% { background-position: 400% 50%; }
+}
+
+.chii{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    text-align: center;
+    align-items: center;
+    
+}
+.chi:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 15px 15px black;
+}
+
+.tbh{
+    width: 100%;
+    height: 300px;
+}
+
+.chi p{
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+    background-color: #ffffffc5;
+}
+
+.tbh{
+    background-image: linear-gradient(20deg,#fac791,rgb(255, 111, 0));
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+
+.psh{
+    width: 300px;
+    height: 450px;
+    border: solid black 2px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0px 3px 5px#000;
+    margin: 20px;
+    
+}
+.psh p{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffba9f;
+    padding: 10px;
+}
+.av{
+    margin-top: 100px;
+    margin-left: 60px;
+}
+.psh img{
+    width: 100%;
+    border-radius: 10px;
+    border: #000 solid 1px;
+}
+.msh{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 50px;
+    font-family: "Rubik", sans-serif;
+    background-color: #ff4800;
+    transition: 1s;
+}
+.msh:hover{
+    background-color: #ff864e;
+    color: #000000;
+}
+@media only screen and (max-width:700px){
+
+    nav{
+        width: 100%; 
+        
+    }
+    .sercha{
+        transform: scale(0.6);
+    }
+    .serch{
+        transform: scale(0.6);
+        position: absolute;
+    }
+    .nv{
+        font-size: 15px;
+        padding: 1px;
+    }
+    .chi{
+        width: 150px;
+        height: 300px;
+        text-align: center;
+        align-items: center;
+        display: inline-block;
+        margin: 0;
+    }
+    .border{
+        margin-top: 10px;
+        background-size: 100%;
+        height: 200px;
+    }
+
+}
