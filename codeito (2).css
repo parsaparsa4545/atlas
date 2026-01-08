@@ -93,7 +93,7 @@ nav{
 .border{
     text-align: center;
     border-bottom: #000 solid 5px;
-    background-image: url(sh.png);
+    background-image: url(sh.WeBP);
     background-size: 90%;
     height: 500px;
     position: relative;
@@ -316,5 +316,6 @@ nav{
     }
 
 }
+
 
 
